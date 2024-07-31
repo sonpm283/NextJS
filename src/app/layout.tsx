@@ -35,7 +35,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${myFont.className} ${myFont.variable}`}>
+        <header className="bg-slate-200">Page Header</header>
         {children}
+        <footer className="bg-slate-200">Page Footer</footer>
       </body>
     </html>
   );
