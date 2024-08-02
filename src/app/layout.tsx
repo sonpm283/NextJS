@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Header from "@/components/header";
+import { Toaster } from "@/components/ui/toaster";
 // import localFont from "next/font/local";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -47,6 +48,7 @@ export default function RootLayout({
           {children}
           {/* <footer className="bg-slate-200">Page Footer</footer> */}
         </ThemeProvider>
+        <Toaster />
       </body>
     </html>
   );
